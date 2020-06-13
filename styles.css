@@ -1,0 +1,142 @@
+body {
+  text-align: center;
+  background-color: #162447;
+  /* background-image: url("images/bgimage.jpeg"); */
+}
+
+#level-title {
+  font-family: 'Montserrat';
+  font-size: 4rem;
+  margin:  5%;
+  color: #FEF2BF;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.howto {
+  background-color: #e7dfd5;
+  width : 100%;
+  /* display: block; */
+  height: 500px;
+  text-align:left;
+  color: black;
+  font-family: Montserrat;
+}
+
+li {
+  margin-left: 25px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+
+*{padding:0;margin:0;}
+
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+  width:20%;
+  height: auto;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#06623b;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	font-size:24px;
+	margin-top:18px;
+}
+
+a.float + div.label-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+
+a.float:hover + div.label-container{
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  margin-top: 3px;
+}
